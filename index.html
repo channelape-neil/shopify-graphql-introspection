@@ -18,7 +18,7 @@
         if (window.location.hash === '#internal') {
             schemaPath = 'shopify-internal-web-core-unstable.json';
         }
-        const schema = new Request('shopify-public-unstable.json');
+        const schema = new Request(schemaPath);
         return fetch(schema) 
             .then((response) => response.json());
       }
